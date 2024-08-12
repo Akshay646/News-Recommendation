@@ -1,0 +1,3 @@
+C:\Users\akshay.yadav\OneDrive - SoftTech Engineers Ltd\Autodesk Platform Service - Model Checker\Web Development\News Recommendation App\obj\Debug\News Recommendation App.njsproj.AssemblyReference.cache
+C:\Users\akshay.yadav\OneDrive - SoftTech Engineers Ltd\Autodesk Platform Service - Model Checker\Web Development\News Recommendation App\obj\Debug\News Recommendation App.njsproj.CoreCompileInputs.cache
+C:\Users\akshay.yadav\OneDrive - SoftTech Engineers Ltd\Autodesk Platform Service - Model Checker\Web Development\News Recommendation App\bin\Microsoft.NodejsTools.WebRole.dll

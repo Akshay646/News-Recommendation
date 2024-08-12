@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Application</title>
+    <link href="/css/main.css" rel="stylesheet" />
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/navbar_items.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Insight360</div>
+        <input type="text" class="search" placeholder="Search...">
+        <nav>
+            <a href="/foryou" id="for-you">For You</a>
+            <a href="/category?topic=technology">Technology</a>
+            <a href="/category?topic=sports">Sports</a>
+            <a href="/category?topic=business">Business</a>
+            <a href="/category?topic=entertainment">Entertainment</a>
+            <a href="/category?topic=health">Health</a>
+            <a href="/category?topic=science">Science</a>
+            <a href="/category?topic=world">World</a>
+        </nav>
+        <!-- Profile icon -->
+        <a href="#" class="profile-icon" id="profile-icon">U</a>
+        <div id="profile-box" class="profile-box">
+            {{#if user}}
+            <h2>Hello, {{user.name}}!</h2>
+            <a href="/profile">Profile</a>
+            <a href="/logout" class="sign-out">Sign Out</a>
+            {{else}}
+            <h2>Welcome!</h2>
+            <a href="/login">Sign In</a>
+            <a href="/register">Sign Up</a>
+            {{/if}}
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            {{> newsfeed news=news}}
+        </main>
+        <aside>
+            <h2>Recommendations</h2>
+            <section class="recommendation">
+                <a href="#"><img src="https://via.placeholder.com/150" alt="Recommendation Image"></a>
+                <h3><a href="#">Recommended Title 1</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </section>
+            <section class="recommendation">
+                <a href="#"><img src="https://via.placeholder.com/150" alt="Recommendation Image"></a>
+                <h3><a href="#">Recommended Title 2</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </section>
+            <!-- Repeat recommendation for more recommendations -->
+        </aside>
+    </div>
+</body>
+</html>

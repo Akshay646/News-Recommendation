@@ -1,0 +1,49 @@
+<!-- views/signin.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="signin-modal">
+        <div style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;">
+            <div style="
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 4px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                max-width: 400px;
+                width: 80%;
+                position: relative;">
+                <h2>Please Sign In</h2>
+                <p>You need to be signed in to access this feature. Please click the button below to sign in.</p>
+                <a href="/login" style="
+                    padding: 10px 20px;
+                    margin-top: 10px;
+                    border: none;
+                    border-radius: 4px;
+                    background-color: black;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 16px;
+                    text-decoration: none;
+                    display: inline-block;">Sign In</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
