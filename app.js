@@ -27,8 +27,9 @@ const static_path = path.join(__dirname, 'public');
 const viewsPath = path.join(__dirname, 'templates/views');
 const partialPaths = path.join(__dirname, 'templates/partials');
 
-app.set('view engine', 'hbs');
 app.set('views', viewsPath);
+app.set('view engine', 'hbs');
+
 hbs.registerPartials(partialPaths);
 
 
@@ -48,15 +49,17 @@ app.use(passport.session());
 // Serve static files
 app.use(express.static(static_path));
 
-// Route handling
-app.use('/', authRoute);
-app.use('/', categoryRoute);
 app.use(function (req, res, next) {
     if (req.isAuthenticated()) {
         res.locals.user = req.user;
     }
     next();
 });
+
+
+// Route handling
+app.use('/', authRoute);
+app.use('/', categoryRoute);
 
 // Start the server
 const port = process.env.PORT || 3000;

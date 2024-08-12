@@ -64,9 +64,6 @@
     <Content Include="templates\partials\newsfeed.hbs">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="templates\partials\signinModal.hbs">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="templates\views\index.hbs">
       <SubType>Code</SubType>
     </Content>

@@ -3,6 +3,7 @@ var router = express.Router();
 var passport = require('passport');
 const { body, validationResult } = require('express-validator');
 
+// Middleware to redirect if authenticated
 function redirectIfAuthenticated(req, res, next) {
     if (req.isAuthenticated()) {
         return res.redirect('/index'); // Redirect to home if already logged in
@@ -10,39 +11,44 @@ function redirectIfAuthenticated(req, res, next) {
     next();
 }
 
+// Ensure user is authenticated
+function ensureAuthenticated(req, res, next) {
+    if (req.isAuthenticated()) {
+        return next();
+    }
+    res.redirect('/login');
+}
+
 // GET /login
 router.get('/login', redirectIfAuthenticated, function (req, res) {
     res.render('login', { title: 'Login Your Account' });
 });
 
-
+// Home route
 router.get('/', (req, res) => {
     // Check if the user is authenticated
     if (req.isAuthenticated()) {
         const personalizedNews = req.session.personalizedNews || [];
-        if (personalizedNews != null) {
-            // Render the index page with personalized news
-            res.render('index', { news: personalizedNews });
-        }
-        res.render('index');
-
+        // Render the index page with personalized news
+        return res.render('index', { news: personalizedNews });
     }
     // Render the home page without user data
     res.render('index');
 });
 
-
+// POST /login
 router.post("/login", passport.authenticate("local", {
     successRedirect: '/',
-    failureRedirect: '/login'
-}), function (req, res) {
+    failureRedirect: '/login',
+    failureFlash: true // Optionally use flash messages for errors
+}));
+
+// GET /register
+router.get('/register', redirectIfAuthenticated, function (req, res) {
+    res.render('register', { title: 'Register Your Account' });
 });
 
-router.get('/register', function (req, res) {
-    res.render('register', { title: 'Register Your Account' })
-});
-
-
+// POST /register
 router.post(
     '/register',
     [
@@ -57,17 +63,17 @@ router.post(
             return true;
         }),
     ],
-    async (req, res, next) => {
-        try {
-            const errors = validationResult(req);
-            if (!errors.isEmpty()) {
-                return res.render('register', {
-                    name: req.body.name,
-                    email: req.body.email,
-                    errorMessages: errors.array(),
-                });
-            }
+    async (req, res) => {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.render('register', {
+                name: req.body.name,
+                email: req.body.email,
+                errorMessages: errors.array(),
+            });
+        }
 
+        try {
             // If validation passes, proceed with registration logic
             const user = new User();
             user.name = req.body.name;
@@ -97,16 +103,9 @@ router.get('/logout', (req, res, next) => {
     });
 });
 
-//Use middleware to protect routes that require authentication. This middleware checks if a user is authenticated and redirects them to the login page if they are not:
-function ensureAuthenticated(req, res, next) {
-    if (req.isAuthenticated()) {
-        return next();
-    }
-    res.redirect('/login');
-}
+// Protected route example
 router.get('/protected', ensureAuthenticated, (req, res) => {
     res.render('protected');
 });
-
 
 module.exports = router;

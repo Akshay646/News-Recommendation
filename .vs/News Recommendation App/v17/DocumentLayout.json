@@ -7,32 +7,16 @@
       "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:routes\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\news.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:routes\\news.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\categories.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:routes\\categories.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\public\\scripts\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:public\\scripts\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\index.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:templates\\views\\index.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\partials\\newsfeed.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:templates\\partials\\newsfeed.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\partials\\signinModal.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:templates\\partials\\signinModal.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\categories.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:routes\\categories.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\user.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -43,8 +27,28 @@
       "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:templates\\views\\login_for_you.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\public\\scripts\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:public\\scripts\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\partials\\newsfeed.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:templates\\partials\\newsfeed.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\newsfeeds.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:templates\\views\\newsfeeds.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\login.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:templates\\views\\login.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\news.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:routes\\news.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\register.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -63,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:passport.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\login.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:templates\\views\\login.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -81,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\login.hbs||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:templates\\views\\login.hbs||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\newsfeeds.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7CC05963-B8DA-4D82-9364-D0D050D50AC1}|News Recommendation App.njsproj|solutionrelative:templates\\views\\newsfeeds.hbs||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,15 +102,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "signinModal.hbs",
-              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\partials\\signinModal.hbs",
-              "RelativeDocumentMoniker": "templates\\partials\\signinModal.hbs",
-              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\partials\\signinModal.hbs",
-              "RelativeToolTip": "templates\\partials\\signinModal.hbs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "index.hbs",
+              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\index.hbs",
+              "RelativeDocumentMoniker": "templates\\views\\index.hbs",
+              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\index.hbs",
+              "RelativeToolTip": "templates\\views\\index.hbs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-09T12:14:31.296Z"
+              "WhenOpened": "2024-08-07T10:35:48.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\public\\scripts\\index.js",
+              "RelativeDocumentMoniker": "public\\scripts\\index.js",
+              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\public\\scripts\\index.js",
+              "RelativeToolTip": "public\\scripts\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-07T10:35:21.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "newsfeeds.hbs",
+              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\newsfeeds.hbs",
+              "RelativeDocumentMoniker": "templates\\views\\newsfeeds.hbs",
+              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\newsfeeds.hbs",
+              "RelativeToolTip": "templates\\views\\newsfeeds.hbs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-07T10:36:08.578Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -124,33 +147,49 @@
               "RelativeDocumentMoniker": "templates\\partials\\newsfeed.hbs",
               "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\partials\\newsfeed.hbs",
               "RelativeToolTip": "templates\\partials\\newsfeed.hbs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-09T12:12:30.197Z"
+              "WhenOpened": "2024-08-09T12:12:30.197Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "index.hbs",
-              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\index.hbs",
-              "RelativeDocumentMoniker": "templates\\views\\index.hbs",
-              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\index.hbs",
-              "RelativeToolTip": "templates\\views\\index.hbs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAqAAAA",
+              "Title": "login_for_you.hbs",
+              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\login_for_you.hbs",
+              "RelativeDocumentMoniker": "templates\\views\\login_for_you.hbs",
+              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\login_for_you.hbs",
+              "RelativeToolTip": "templates\\views\\login_for_you.hbs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAcwCcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-07T10:35:48.899Z"
+              "WhenOpened": "2024-08-09T12:18:40.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "news.js",
+              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\news.js",
+              "RelativeDocumentMoniker": "routes\\news.js",
+              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\news.js",
+              "RelativeToolTip": "routes\\news.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-07T10:34:27.391Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "categories.js",
-              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\categories.js",
-              "RelativeDocumentMoniker": "routes\\categories.js",
-              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\categories.js",
-              "RelativeToolTip": "routes\\categories.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABJAAAA",
+              "Title": "user.js",
+              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\user.js",
+              "RelativeDocumentMoniker": "routes\\user.js",
+              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\user.js",
+              "RelativeToolTip": "routes\\user.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-08T08:57:10.563Z"
+              "WhenOpened": "2024-08-08T15:46:33.338Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -160,50 +199,40 @@
               "RelativeDocumentMoniker": "routes\\auth.js",
               "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\auth.js",
               "RelativeToolTip": "routes\\auth.js",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBsAAAAAAAAA",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAAAG8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-08-09T06:53:56.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "app.js",
-              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\app.js",
-              "RelativeDocumentMoniker": "app.js",
-              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\app.js",
-              "RelativeToolTip": "app.js",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAB8AAAAhAAAA",
+              "DocumentIndex": 3,
+              "Title": "categories.js",
+              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\categories.js",
+              "RelativeDocumentMoniker": "routes\\categories.js",
+              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\categories.js",
+              "RelativeToolTip": "routes\\categories.js",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwBQAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-07T10:31:06.658Z"
+              "WhenOpened": "2024-08-08T08:57:10.563Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "user.js",
-              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\user.js",
-              "RelativeDocumentMoniker": "routes\\user.js",
-              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\user.js",
-              "RelativeToolTip": "routes\\user.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-08T15:46:33.338Z"
+              "Title": "login.hbs",
+              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\login.hbs",
+              "RelativeDocumentMoniker": "templates\\views\\login.hbs",
+              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\login.hbs",
+              "RelativeToolTip": "templates\\views\\login.hbs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-07T10:40:08.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "news.js",
-              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\news.js",
-              "RelativeDocumentMoniker": "routes\\news.js",
-              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\routes\\news.js",
-              "RelativeToolTip": "routes\\news.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-07T10:34:27.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "package.json",
               "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\package.json",
               "RelativeDocumentMoniker": "package.json",
@@ -211,35 +240,25 @@
               "RelativeToolTip": "package.json",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-07T10:50:50.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "login_for_you.hbs",
-              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\login_for_you.hbs",
-              "RelativeDocumentMoniker": "templates\\views\\login_for_you.hbs",
-              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\login_for_you.hbs",
-              "RelativeToolTip": "templates\\views\\login_for_you.hbs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAcwCcAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-09T12:18:40.161Z"
+              "WhenOpened": "2024-08-07T10:50:50.894Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "index.js",
-              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\public\\scripts\\index.js",
-              "RelativeDocumentMoniker": "public\\scripts\\index.js",
-              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\public\\scripts\\index.js",
-              "RelativeToolTip": "public\\scripts\\index.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Title": "app.js",
+              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\app.js",
+              "RelativeDocumentMoniker": "app.js",
+              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\app.js",
+              "RelativeToolTip": "app.js",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACcAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-07T10:35:21.606Z"
+              "WhenOpened": "2024-08-07T10:31:06.658Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "register.hbs",
               "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\register.hbs",
               "RelativeDocumentMoniker": "templates\\views\\register.hbs",
@@ -247,11 +266,12 @@
               "RelativeToolTip": "templates\\views\\register.hbs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-07T10:37:19.854Z"
+              "WhenOpened": "2024-08-07T10:37:19.854Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "main.css",
               "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\public\\css\\main.css",
               "RelativeDocumentMoniker": "public\\css\\main.css",
@@ -259,11 +279,12 @@
               "RelativeToolTip": "public\\css\\main.css",
               "ViewState": "AQIAAOoAAAAAAAAAAAAIwPgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-07T10:34:55.473Z"
+              "WhenOpened": "2024-08-07T10:34:55.473Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "user.js",
               "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\src\\models\\user.js",
               "RelativeDocumentMoniker": "src\\models\\user.js",
@@ -271,23 +292,12 @@
               "RelativeToolTip": "src\\models\\user.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-08T15:05:58.678Z"
+              "WhenOpened": "2024-08-08T15:05:58.678Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "login.hbs",
-              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\login.hbs",
-              "RelativeDocumentMoniker": "templates\\views\\login.hbs",
-              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\login.hbs",
-              "RelativeToolTip": "templates\\views\\login.hbs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-07T10:40:08.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "passport.js",
               "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\passport.js",
               "RelativeDocumentMoniker": "passport.js",
@@ -295,7 +305,8 @@
               "RelativeToolTip": "passport.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-08T15:57:41.946Z"
+              "WhenOpened": "2024-08-08T15:57:41.946Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -307,7 +318,8 @@
               "RelativeToolTip": "config.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-08T15:35:05.028Z"
+              "WhenOpened": "2024-08-08T15:35:05.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -319,7 +331,8 @@
               "RelativeToolTip": "public\\css\\register.css",
               "ViewState": "AQIAAGYAAAAAAAAAAAAkwHwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-07T10:35:12.154Z"
+              "WhenOpened": "2024-08-07T10:35:12.154Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -331,7 +344,8 @@
               "RelativeToolTip": "templates\\views\\recommendations.hbs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-07T10:37:08.777Z"
+              "WhenOpened": "2024-08-07T10:37:08.777Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -343,19 +357,8 @@
               "RelativeToolTip": "templates\\views\\login.hbs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-07T10:36:45.156Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "newsfeeds.hbs",
-              "DocumentMoniker": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\newsfeeds.hbs",
-              "RelativeDocumentMoniker": "templates\\views\\newsfeeds.hbs",
-              "ToolTip": "C:\\Users\\akshay.yadav\\OneDrive - SoftTech Engineers Ltd\\Autodesk Platform Service - Model Checker\\Web Development\\News Recommendation App\\templates\\views\\newsfeeds.hbs",
-              "RelativeToolTip": "templates\\views\\newsfeeds.hbs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-07T10:36:08.578Z"
+              "WhenOpened": "2024-08-07T10:36:45.156Z",
+              "EditorCaption": ""
             }
           ]
         }
