@@ -11,13 +11,13 @@ var hbs = require('hbs');
 // Route imports
 const authRoute = require('./routes/auth');
 const categoryRoute = require('./routes/categories');
+const userRoute = require('./routes/user');
 
 // Initialize Passport
 require('./passport');
 
 // Connect to the database
 mongoose.connect(config.dbConnstring).then(() => { console.log("conn successful")});
-
 
 // Global models
 global.User = require('./src/models/user');
@@ -59,6 +59,7 @@ app.use(function (req, res, next) {
 
 // Route handling
 app.use('/', authRoute);
+app.use('/', userRoute);
 app.use('/', categoryRoute);
 
 // Start the server

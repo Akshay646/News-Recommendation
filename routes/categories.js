@@ -1,16 +1,16 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios'); // Add axios for making HTTP requests
+const getCountry = require('../utils/country'); // Import the server-side utility function
 
-async function getPersonalizedNews(user) {
-    const preferences = user.preferences; // Array of preferences, e.g., ["technology", "health"]
+async function fetchNews(category) {
     const news = [];
 
     try {
-        for (const preference of preferences) {
-            const response = await axios.get(`https://recommendation-api-jw38.onrender.com/api/news/search?q=${preference}`);
-            news.push(...response.data.articles); // Combine all articles from different preferences
-        }
+        const country = await getCountry();
+        const response = await axios.get(`https://recommendation-api-jw38.onrender.com/api/news/search?q=${category}&country=${country}`);
+        news.push(...response.data.articles); // Combine all articles
+        
     } catch (error) {
         console.error('Error fetching news:', error);
     }
@@ -18,20 +18,15 @@ async function getPersonalizedNews(user) {
     return news;
 }
 
-router.get('/foryou', async (req, res) => { // Make the route handler async
-    if (req.isAuthenticated()) {
-        try {
-            const personalizedNews = await getPersonalizedNews(req.user); // Await the async function
-            req.session.personalizedNews = personalizedNews;
-            // Redirect to the index page
-            res.redirect('/index');
-        } catch (error) {
-            console.error('Error processing personalized news:', error);
-            res.status(500).send('Internal Server Error');
-        }
-    } else {
-        res.render('login_for_you');
-    }
+router.get('/category', async (req, res) => {
+    // Extract the topic query parameter from the request
+    const topic = req.query.topic;
+    const articles = await fetchNews(topic);
+    console.log(req.user);
+    req.session.categoryFeeds = articles;
+    // Render a template and pass the topic and articles to the view
+    return res.redirect('/');
 });
 
 module.exports = router;
+// Export the method

@@ -49,7 +49,7 @@
     <Content Include="routes\auth.js">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="routes\news.js">
+    <Content Include="utils\country.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="routes\user.js">
@@ -73,9 +73,6 @@
     <Content Include="templates\views\login_for_you.hbs">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="templates\views\newsfeeds.hbs">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="templates\views\recommendations.hbs">
       <SubType>Code</SubType>
     </Content>
@@ -84,10 +81,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="utils\" />
     <Folder Include="public\css\" />
     <Folder Include="public\scripts\" />
     <Folder Include="src\" />
-    <Folder Include="src\db\" />
     <Folder Include="src\models\" />
     <Folder Include="templates\" />
     <Folder Include="routes\" />

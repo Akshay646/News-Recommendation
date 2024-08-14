@@ -24,18 +24,6 @@ router.get('/login', redirectIfAuthenticated, function (req, res) {
     res.render('login', { title: 'Login Your Account' });
 });
 
-// Home route
-router.get('/', (req, res) => {
-    // Check if the user is authenticated
-    if (req.isAuthenticated()) {
-        const personalizedNews = req.session.personalizedNews || [];
-        // Render the index page with personalized news
-        return res.render('index', { news: personalizedNews });
-    }
-    // Render the home page without user data
-    res.render('index');
-});
-
 // POST /login
 router.post("/login", passport.authenticate("local", {
     successRedirect: '/',
@@ -74,11 +62,22 @@ router.post(
         }
 
         try {
-            // If validation passes, proceed with registration logic
+            // Check if a user with the same email already exists
+            const existingUser = await User.findOne({ email: req.body.email });
+            if (existingUser) {
+                return res.render('register', {
+                    name: req.body.name,
+                    email: req.body.email,
+                    errorMessages: [{ msg: 'User already exists, please login.' }],
+                });
+            }
+
+            // If validation passes and user does not exist, proceed with registration logic
             const user = new User();
             user.name = req.body.name;
             user.email = req.body.email;
             user.preferences = req.body['news-topics'];
+            user.country = req.body.country;
             user.setPassword(req.body.password);
 
             await user.save(); // Await the promise instead of using a callback
@@ -90,6 +89,7 @@ router.post(
         }
     }
 );
+
 
 // Logout route
 router.get('/logout', (req, res, next) => {

@@ -13,11 +13,11 @@ var userSchema = new mongoose.Schema({
     },
     preferences: {
         type: Array,
-        required: false
+        required: true
     },
     country: {
         type: String,
-        required: false
+        required: true
     },
     hash: String,
     salt: String
