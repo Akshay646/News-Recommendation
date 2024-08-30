@@ -10,7 +10,7 @@ const cookieParser = require('cookie-parser');
 var hbs = require('hbs');
 // Route imports
 const authRoute = require('./routes/auth');
-const categoryRoute = require('./routes/categories');
+const newsRoute = require('./routes/news');
 const userRoute = require('./routes/user');
 
 // Initialize Passport
@@ -32,6 +32,25 @@ app.set('view engine', 'hbs');
 
 hbs.registerPartials(partialPaths);
 
+// Register gt helper
+hbs.registerHelper('gt', function (a, b) {
+    return a > b;
+});
+
+// Register lt helper
+hbs.registerHelper('lt', function (a, b) {
+    return a < b;
+});
+
+//Register subtract helper
+hbs.registerHelper('subtract', function (a, b) {
+    return a - b;
+});
+
+//Register add helper
+hbs.registerHelper('add', function (a, b) {
+    return a + b;
+});
 
 // Middleware setup
 app.use(logger('dev'));
@@ -60,7 +79,7 @@ app.use(function (req, res, next) {
 // Route handling
 app.use('/', authRoute);
 app.use('/', userRoute);
-app.use('/', categoryRoute);
+app.use('/', newsRoute);
 
 // Start the server
 const port = process.env.PORT || 3000;

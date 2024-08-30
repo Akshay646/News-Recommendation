@@ -13,11 +13,9 @@ var userSchema = new mongoose.Schema({
     },
     preferences: {
         type: Array,
-        required: true
     },
     country: {
         type: String,
-        required: true
     },
     hash: String,
     salt: String

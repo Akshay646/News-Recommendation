@@ -27,21 +27,30 @@ header {
         white-space: nowrap; /* Prevents text from wrapping */
     }
 
-    header .search-nav-container {
-        display: flex;
-        align-items: center;
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 300px;
+}
+
+    .search-box input[type="text"] {
+        border: none;
+        outline: none;
+        padding: 5px;
         flex-grow: 1;
     }
 
-    header .search {
-        padding: 5px;
-        border-radius: 4px;
-        border: 1px solid #ddd;
-        background-color: #f9f9f9;
-        width: 30%;
-        flex-grow: 1;
-        max-width: 300px; /* Prevents the search box from getting too large */
-        margin-right: 20px;
+    .search-box button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .search-box img {
+        width: 20px;
+        height: 20px;
     }
 
     header nav {
@@ -168,15 +177,19 @@ aside {
         padding: 10px; /* Adjust padding to fit content on small screens */
     }
 
-        header .search-nav-container {
-            width: 100%; /* Make the container full-width */
-            flex-direction: column;
-            align-items: flex-start;
+    .search-box {
+        max-width: 100%;
+        padding: 3px;
+    }
+
+        .search-box input[type="text"] {
+            padding: 3px;
+            font-size: 14px;
         }
 
-        header .search {
-            width: 100%;
-            margin-bottom: 10px;
+        .search-box img {
+            width: 16px;
+            height: 16px;
         }
 
         header nav {

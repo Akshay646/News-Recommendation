@@ -49,6 +49,7 @@
     <Content Include="routes\auth.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="routes\news.js" />
     <Content Include="utils\country.js">
       <SubType>Code</SubType>
     </Content>

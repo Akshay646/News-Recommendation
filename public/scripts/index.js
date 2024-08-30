@@ -26,4 +26,21 @@ document.addEventListener('DOMContentLoaded', () => {
             profileBox.style.display = 'none';
         }
     });
+
+    document.getElementById('submit').addEventListener('click', function () {
+        performSearch();
+    });
+
+    document.getElementById('searchInput').addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+            performSearch();
+        }
+    });
+
+    function performSearch() {
+        const query = document.getElementById('searchInput').value;
+        if (query) {
+            window.location.href = `/search?q=${encodeURIComponent(query)}`;
+        }
+    }
 });

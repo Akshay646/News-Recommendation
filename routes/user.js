@@ -19,8 +19,8 @@ async function getPersonalizedNews(user) {
     try {
         const country = await getCountry();
         for (const preference of preferences) {
-            const response = await axios.get(`https://recommendation-api-jw38.onrender.com/api/news/search?q=${preference}&country=${country}`);
-            news.push(...response.data.articles); // Combine all articles from different preferences
+            const response = await axios.get(`https://newsdata.io/api/1/news?apikey=pub_48828138c1a7fd2c74b3ce209941d0767481c&q=${preference}&country=in`);
+            news.push(...response.data.results); // Combine all articles from different preferences
         }
     } catch (error) {
         console.error('Error fetching news:', error);
@@ -30,43 +30,42 @@ async function getPersonalizedNews(user) {
 }
 
 //Do not forget that we always show personalised news that we store in the session, if user is nt signed in, we show latest news
-// Home route
 router.get('/', async (req, res) => {
     try {
         let news = [];
 
-        if (req.isAuthenticated()) {
-            // Check if personalized news is already stored in the session
+        // Check if the user is authenticated and no query parameter 'topic' is present
+        if (req.isAuthenticated() && !req.query.topic) {
             if (!req.session.personalizedNews) {
-                // Fetch personalized news if not already stored in session
+                // Fetch and store personalized news in session if not already stored
                 news = await getPersonalizedNews(req.user);
-                // Store news in the session
                 req.session.personalizedNews = news;
             } else {
                 // Use personalized news from the session
                 news = req.session.personalizedNews;
             }
-            res.render('index', { news })
         }
-        else if (req.session.categoryFeeds) {
-            // Use personalized news from session
-            // Use category feeds from session if 1available
-            news = req.session.categoryFeeds;
-            res.render('index', { news });
+        // If a 'topic' query parameter is present
+        else if (req.query.topic) {
+            // Use category feeds stored in session
+            news = req.session.categoryFeeds || [];
         }
+        // Fallback for unauthenticated users without a topic query
         else {
-            // If not authenticated and no category feeds, fetch latest news
-            //news = await newsFeed.getLatestNews(); // Assuming this function fetches the latest news
-            //req.session.categoryFeeds = news; // Cache it in session for future requests
+            // Fetch latest news if not authenticated and no category feeds
+            // news = await newsFeed.getLatestNews();
+            // req.session.categoryFeeds = news;
         }
 
-        // Render the index page with the appropriate news
+        // Render the index page with the fetched news
         res.render('index', { news });
     } catch (error) {
         console.error('Error fetching news:', error);
         res.status(500).send(error);
     }
 });
+
+
 
 router.get('/foryou', async (req, res) => { // Make the route handler async
     if (req.isAuthenticated()) {
