@@ -260,3 +260,53 @@ aside {
     font-size: 1.2em;
     color: #007bff;
 }
+
+/* Ensure modal is centered and scrollable */
+/* Modal container styling */
+#newsModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal content styling */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* Center the modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Limit maximum width */
+    max-height: 90vh; /* Prevents modal from being too tall */
+    position: relative; /* Required for positioning the close button */
+    overflow: auto; /* Allows scrolling if content overflows */
+}
+
+    /* Modal image styling */
+    .modal-content img {
+        max-width: 100%; /* Ensures image fits within modal */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Prevents inline spacing */
+        margin-bottom: 15px; /* Space below the image */
+    }
+
+/* Close button styling */
+.close {
+    color: #aaa;
+    float: right; /* Shift to the right */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+    }

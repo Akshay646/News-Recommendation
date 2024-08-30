@@ -42,6 +42,17 @@
     <div class="container">
         <main>
             {{> newsfeed news=news}}
+            <div id="newsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalCreator"></p>
+                    <p id="modalPubDate"></p>
+                    <img id="modalImage" src="" alt="News Image">
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+
             <div class="pagination">
                 {{#if (gt currentPage 1)}}
                 <a href="?topic={{topic}}&page={{subtract currentPage 1}}">Previous</a>
@@ -54,18 +65,21 @@
         </main>
         <aside>
             <h2>Recommendations</h2>
+            {{#if recommendations.length}}
+            {{#each recommendations}}
             <section class="recommendation">
-                <a href="#"><img src="https://via.placeholder.com/150" alt="Recommendation Image"></a>
-                <h3><a href="#">Recommended Title 1</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="{{this.link}}" target="_blank">
+                    <img src="{{this.image_url}}" alt="Recommendation Image" onerror="this.onerror=null; this.src='default-image-path.jpg';">
+                </a>
+                <h3><a href="{{this.link}}" target="_blank">{{this.title}}</a></h3>
+                <p>{{this.description}}</p>
             </section>
-            <section class="recommendation">
-                <a href="#"><img src="https://via.placeholder.com/150" alt="Recommendation Image"></a>
-                <h3><a href="#">Recommended Title 2</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </section>
-            <!-- Repeat recommendation for more recommendations -->
+            {{/each}}
+            {{else}}
+            <p>No recommendations available.</p>
+            {{/if}}
         </aside>
+
     </div>
 </body>
 </html>
