@@ -43,9 +43,6 @@
     <Content Include="public\scripts\index.js">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="routes\categories.js">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="routes\auth.js">
       <SubType>Code</SubType>
     </Content>
@@ -74,7 +71,7 @@
     <Content Include="templates\views\login_for_you.hbs">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="templates\views\recommendations.hbs">
+    <Content Include="templates\partials\recommendation.hbs">
       <SubType>Code</SubType>
     </Content>
     <Content Include="templates\views\register.hbs">

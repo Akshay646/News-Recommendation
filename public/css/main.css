@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 header {
@@ -16,15 +17,15 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Ensure it stays above other content */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
     header .logo {
         font-size: 1.5em;
         font-weight: bold;
         margin-right: 20px;
-        white-space: nowrap; /* Prevents text from wrapping */
+        white-space: nowrap;
     }
 
 .search-box {
@@ -48,27 +49,28 @@ header {
         border: none;
         cursor: pointer;
     }
+
     .search-box img {
         width: 20px;
         height: 20px;
     }
 
-    header nav {
-        display: flex;
-        flex-wrap: nowrap; /* Ensure nav items stay in one line */
-        align-items: center;
+header nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+    header nav a {
+        color: black;
+        margin-left: 20px;
+        text-decoration: none;
+        white-space: nowrap;
     }
 
-        header nav a {
-            color: black;
-            margin-left: 20px;
-            text-decoration: none;
-            white-space: nowrap; /* Prevents text from wrapping */
+        header nav a:hover {
+            text-decoration: underline;
         }
-
-            header nav a:hover {
-                text-decoration: underline;
-            }
 
 .profile-icon {
     width: 40px;
@@ -81,20 +83,24 @@ header {
     font-size: 18px;
     color: #333;
     text-decoration: none;
-    margin-left: 20px; /* Space between nav and profile icon */
-    flex-shrink: 0; /* Prevents profile icon from shrinking */
-    position:relative;
-    right:2em;
+    margin-left: 20px;
+    flex-shrink: 0;
+    position: relative;
+    right: 2em;
 }
 
 .container {
     display: flex;
-    padding: 80px 20px 20px; /* Adjust top padding to account for the fixed navbar */
+    padding: 100px 20px 20px; /* Adjusted padding to avoid content hiding under the header */
+    max-width: 100vw; /* Ensures the container stays within the viewport */
+    box-sizing: border-box;
 }
 
 main {
-    flex-grow: 1;
-    padding: 0 20px;
+    flex: 0 0 60%; /* 60% width for the news items */
+    padding-right: 20px;
+    overflow-y: auto; /* Allows vertical scrolling for the main content */
+    box-sizing: border-box;
 }
 
 .news-item {
@@ -103,6 +109,8 @@ main {
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
     .news-item img {
@@ -132,10 +140,13 @@ main {
     }
 
 aside {
-    width: 300px;
+    flex: 0 0 40%; /* 40% width for the recommendations */
     background-color: white;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Allows vertical scrolling for recommendations */
+    box-sizing: border-box;
+    height: 100%; /* Ensures that aside takes the full height of the viewport */
 }
 
     aside h2 {
@@ -144,12 +155,18 @@ aside {
 
 .recommendation {
     margin-bottom: 20px;
+    padding: 15px; /* Add padding inside each recommendation */
+    border: 1px solid #e0e0e0; /* Add a subtle border around each recommendation */
+    border-radius: 8px; /* Optional: add rounded corners */
+    background-color: #f9f9f9; /* Optional: slightly different background for contrast */
+    box-sizing: border-box;
 }
 
     .recommendation img {
         max-width: 100%;
         display: block;
         margin-bottom: 10px;
+        border-radius: 5px; /* Optional: add rounded corners to the image */
     }
 
     .recommendation h3 {
@@ -169,12 +186,34 @@ aside {
         margin: 10px 0 0;
     }
 
+
+/* Loader styles */
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto; /* Center the loader */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px; /* Adjust padding to fit content on small screens */
+        padding: 10px;
     }
 
     .search-box {
@@ -192,31 +231,36 @@ aside {
             height: 16px;
         }
 
-        header nav {
-            flex-direction: row;
-            width: 100%;
-            overflow-x: auto; /* Allow horizontal scroll if nav items overflow */
-        }
+    header nav {
+        flex-direction: row;
+        width: 100%;
+        overflow-x: auto;
+    }
 
-            header nav a {
-                margin: 5px 0;
-            }
+        header nav a {
+            margin: 5px 0;
+        }
 
     .container {
         flex-direction: column;
-        padding-top: 60px; /* Adjust padding for smaller screens */
+        padding-top: 80px;
     }
 
     aside {
         width: 100%;
         margin-top: 20px;
+        max-height: none; /* Remove height constraint for smaller screens */
+    }
+
+    main {
+        width: 100%;
     }
 }
 
 .profile-box {
     display: none;
     position: absolute;
-    top: 60px; /* Adjusted to align below the fixed header */
+    top: 60px;
     right: 10px;
     border: 1px solid #ddd;
     background-color: #fff;
@@ -225,7 +269,8 @@ aside {
     z-index: 1000;
     min-width: 200px;
     border-radius: 4px;
-    max-width: calc(100% - 20px); /* Ensures it stays within the viewport */
+    max-width: calc(100% - 20px);
+    box-sizing: border-box;
 }
 
     .profile-box h2 {
@@ -261,48 +306,62 @@ aside {
     color: #007bff;
 }
 
-/* Ensure modal is centered and scrollable */
-/* Modal container styling */
+/* Modal Styles */
 #newsModal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal content styling */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* Center the modal */
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Adjust width as needed */
-    max-width: 800px; /* Limit maximum width */
-    max-height: 90vh; /* Prevents modal from being too tall */
-    position: relative; /* Required for positioning the close button */
-    overflow: auto; /* Allows scrolling if content overflows */
+    width: 80%;
+    max-width: 800px; /* Limit the modal width */
+    max-height: 90vh; /* Limit modal height */
+    overflow-y: auto; /* Enable scrolling if content is too tall */
 }
 
-    /* Modal image styling */
     .modal-content img {
-        max-width: 100%; /* Ensures image fits within modal */
-        height: auto; /* Maintain aspect ratio */
-        display: block; /* Prevents inline spacing */
-        margin-bottom: 15px; /* Space below the image */
+        max-width: 100%;
+        max-height: 300px; /* Limit image height */
+        display: block;
+        margin: 0 auto; /* Center the image */
     }
 
-/* Close button styling */
+/* Close button */
 .close {
     color: #aaa;
-    float: right; /* Shift to the right */
+    float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+}
+/* Other modal text styling */
+#modalTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#modalDescription {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#modalCreator,
+#modalPubDate {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
 }
 
     .close:hover,
@@ -310,3 +369,8 @@ aside {
         color: black;
         text-decoration: none;
     }
+
+/* Prevent background scroll when modal is open */
+body.modal-open {
+    overflow: hidden;
+}

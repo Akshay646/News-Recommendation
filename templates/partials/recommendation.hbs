@@ -1,0 +1,12 @@
+<!-- recommendation.hbs -->
+{{#each recommendations}}
+<section class="recommendation" data-id="{{this._id}}">
+    <a href="{{this.link}}" target="_blank">
+        <img src="{{#if this.image_url}}{{this.image_url}}{{else}}default-image-path.jpg{{/if}}" alt="Recommendation Image">
+    </a>
+    <div class="recommendation-content">
+        <h3><a href="{{this.link}}" target="_blank">{{this.title}}</a></h3>
+        <p>{{this.description}}</p>
+    </div>
+</section>
+{{/each}}

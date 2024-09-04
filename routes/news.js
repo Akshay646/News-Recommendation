@@ -87,35 +87,24 @@ router.get('/search', async (req, res) => {
 // Route to fetch recommendations
 router.post('/recommendation', async (req, res) => {
     try {
-        console.log('recommendation route accessed');
-
-        // Extract the necessary fields from the request body
-        const { title, description, creator } = req.body;
-
-        // Combine the fields into a single description
+        const { title, description } = req.body;
         const combinedDescription = `${title} ${description}`;
-
-        // Fetch recommendations from the Python API
-        console.log('Sending request to Python API with description:', combinedDescription);
 
         const response = await axios.post('http://127.0.0.1:5000/api/news/recommendations', {
             description: combinedDescription
         });
 
-        console.log('Received response from Python API:', response.data);
-        // Check if the response was successful
         if (response.status === 200) {
-            // Pass the recommendations to the view
-            res.render('index', { recommendations: response.data });
+            const recommendations = response.data;
+            return res.json(recommendations);  // Return recommendations as JSON
         } else {
-            console.error(`Error fetching recommendations: ${response.statusText}`);
-            res.status(response.status).send(`Error fetching recommendations: ${response.statusText}`);
+            return res.status(response.status).json({ error: response.statusText });
         }
     } catch (error) {
-        console.error(`Error fetching recommendations: ${error.message}`);
-        res.status(500).send(`Error fetching recommendations: ${error.message}`);
+        return res.status(500).json({ error: error.message });
     }
 });
+
 module.exports = router;
 
 
