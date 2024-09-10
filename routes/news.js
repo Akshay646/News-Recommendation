@@ -3,7 +3,6 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const axios = require('axios'); // Add axios for making HTTP requests
 
-
 // Define the schema with text indexes
 const newsSchema = new mongoose.Schema({}, { strict: false });
 // Create a compound text index on the relevant fields
@@ -11,7 +10,17 @@ newsSchema.index({ title: "text", description: "text", link: "text", category: "
 
 const News = mongoose.model('News', newsSchema, 'DataSet');
 
-// Fetch news by category from MongoDB
+// Utility function to truncate description to a max of 40 words
+function truncateDescription(description, wordLimit = 40) {
+    if (!description) return '';
+    const words = description.split(' ');
+    if (words.length > wordLimit) {
+        return words.slice(0, wordLimit).join(' ') + '...';  // Add ellipsis at the end
+    }
+    return description;
+}
+
+// Fetch news by category from MongoDB with truncated descriptions
 async function searchNewsByCategory(category, page = 1, limit = 100) {
     try {
         const news = await News.find({ category: category })
@@ -19,14 +28,19 @@ async function searchNewsByCategory(category, page = 1, limit = 100) {
             .limit(limit)
             .exec();
 
+        // Truncate descriptions
+        const truncatedNews = news.map(item => ({
+            ...item._doc,
+            description: truncateDescription(item.description),
+        }));
+
         const totalCount = await News.countDocuments({ category: category });
-        return { news, totalCount };
+        return { news: truncatedNews, totalCount };
     } catch (error) {
         console.error('Error searching news by category:', error.message);
         return { news: [], totalCount: 0 };
     }
 }
-
 
 // Route to fetch and render news based on category
 router.get('/category', async (req, res) => {
@@ -49,8 +63,7 @@ router.get('/category', async (req, res) => {
     });
 });
 
-
-//search news by keyword
+// Route to search news by keyword with truncated descriptions
 router.get('/search', async (req, res) => {
     const { q } = req.query; // Assuming the keyword is passed as 'q'
     const page = parseInt(req.query.page) || 1;
@@ -69,10 +82,16 @@ router.get('/search', async (req, res) => {
             .limit(limit)
             .exec();
 
+        // Truncate descriptions
+        const truncatedNews = news.map(item => ({
+            ...item._doc,
+            description: truncateDescription(item.description),
+        }));
+
         const totalCount = await News.countDocuments(searchQuery);
 
         return res.render('index', {
-            news: news,
+            news: truncatedNews,
             topic: 'Search Results',
             query: q,
             currentPage: page,
@@ -106,12 +125,3 @@ router.post('/recommendation', async (req, res) => {
 });
 
 module.exports = router;
-
-
-
-//fetch news by category
-
-//fetch recommendations by providing description and title of the news.
-//When user selects any news, store/pass news title and desciption and may be other related field combined
-//with the key 'description' as out  recommendation engine expects a key 'description' to be passed via request body
-
